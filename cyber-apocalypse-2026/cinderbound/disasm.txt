@@ -1,0 +1,85 @@
+mpy_source_file: cinderbound.mpy
+source_file: judge_src.py
+header: 4d:06:00:1f
+qstr_table[8]:
+    judge_src.py
+    <module>
+    judge
+    append
+    syllable
+    len
+    ord
+    list
+obj_table: [(57, 129, 154, 31, 199, 192, 73, 243, 43, 176, 255, 173, 54, 203, 67, 15)]
+simple_name: <module>
+  raw bytecode: 9 00:02:01:32:00:16:02:51:63
+  prelude: (1, 0, 0, 0, 0, 0)
+  args: []
+  line info: 
+  32:00       MAKE_FUNCTION 0
+  16:02       STORE_NAME judge
+  51          LOAD_CONST_NONE 
+  63          RETURN_VALUE 
+  children: ['judge']
+simple_name: judge
+  raw bytecode: 88 59:14:02:04:20:23:24:23:2a:32:2e:30:23:00:c1:22:80:5a:c2:2b:00:c3:12:05:b0:34:01:80:42:6b:57:c4:12:06:b0:b4:55:34:01:b2:ee:b4:8d:f4:22:81:7f:ef:ee:c5:b2:12:06:b0:b4:55:34:01:f2:22:81:7f:ef:c2:b3:14:03:b5:36:01:59:81:e5:58:5a:d7:43:10:59:59:b3:12:07:b1:34:01:d9:63
+  prelude: (12, 0, 0, 1, 0, 0)
+  args: ['syllable']
+  line info: 20:23:24:23:2a:32:2e:30
+  23:00       LOAD_CONST_OBJ (57, 129, 154, 31, 199, 192, 73, 243, 43, 176, 255, 173, 54, 203, 67, 15)
+  c1          STORE_FAST 1 
+  22:80:5a    LOAD_CONST_SMALL_INT 90
+  c2          STORE_FAST 2 
+  2b:00       BUILD_LIST 0
+  c3          STORE_FAST 3 
+  12:05       LOAD_GLOBAL len
+  b0          LOAD_FAST 0 
+  34:01       CALL_FUNCTION 1
+  80          LOAD_CONST_SMALL_INT 0 
+  42:6b       JUMP 43
+  57          DUP_TOP 
+  c4          STORE_FAST 4 
+  12:06       LOAD_GLOBAL ord
+  b0          LOAD_FAST 0 
+  b4          LOAD_FAST 4 
+  55          LOAD_SUBSCR 
+  34:01       CALL_FUNCTION 1
+  b2          LOAD_FAST 2 
+  ee          BINARY_OP 23 __xor__ 
+  b4          LOAD_FAST 4 
+  8d          LOAD_CONST_SMALL_INT 13 
+  f4          BINARY_OP 29 __mul__ 
+  22:81:7f    LOAD_CONST_SMALL_INT 255
+  ef          BINARY_OP 24 __and__ 
+  ee          BINARY_OP 23 __xor__ 
+  c5          STORE_FAST 5 
+  b2          LOAD_FAST 2 
+  12:06       LOAD_GLOBAL ord
+  b0          LOAD_FAST 0 
+  b4          LOAD_FAST 4 
+  55          LOAD_SUBSCR 
+  34:01       CALL_FUNCTION 1
+  f2          BINARY_OP 27 __add__ 
+  22:81:7f    LOAD_CONST_SMALL_INT 255
+  ef          BINARY_OP 24 __and__ 
+  c2          STORE_FAST 2 
+  b3          LOAD_FAST 3 
+  14:03       LOAD_METHOD append
+  b5          LOAD_FAST 5 
+  36:01       CALL_METHOD 1
+  59          POP_TOP 
+  81          LOAD_CONST_SMALL_INT 1 
+  e5          BINARY_OP 14 __iadd__ 
+  58          DUP_TOP_TWO 
+  5a          ROT_TWO 
+  d7          BINARY_OP 0 __lt__ 
+  43:10       POP_JUMP_IF_TRUE -48
+  59          POP_TOP 
+  59          POP_TOP 
+  b3          LOAD_FAST 3 
+  12:07       LOAD_GLOBAL list
+  b1          LOAD_FAST 1 
+  34:01       CALL_FUNCTION 1
+  d9          BINARY_OP 2 __eq__ 
+  63          RETURN_VALUE 
+  children: []
